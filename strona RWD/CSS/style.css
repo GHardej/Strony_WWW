@@ -86,6 +86,7 @@ main {
 /* o nas */
 .about-us-info {
 	margin-bottom: 10px;
+	padding: 0 20px;
 }
 
 /* products */
@@ -145,6 +146,19 @@ main {
 	}
 	.cd-text p {
 		font-size: 18px;
+	}
+	.products h3 {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 992px) {
+	.products-box {
+		font-size: 0;
+	}
+	.product {
+		width: 50%;
+		display: inline-block;
 	}
 }
 
