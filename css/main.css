@@ -17,8 +17,14 @@ body {
   color: #039dff;
 }
 
+.nav-shadow {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 nav {
   text-transform: uppercase;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
   z-index: 1;
 }
 

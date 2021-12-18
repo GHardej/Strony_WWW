@@ -18,8 +18,13 @@ body {
 	color: $blue;
 }
 
+.nav-shadow {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
 nav {
-	text-transform: uppercase;
+    text-transform: uppercase;
+    transition: background-color .6s;
 	z-index: 1;
 
 	.nav-link,
