@@ -14,8 +14,20 @@ body {
 	background-color: #444;
 }
 
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.underline {
+    margin: 0 auto 40px;
+	width: 70px;
+	height: 4px;
+	background-color: $main-color;
+}
+
 .blue-text {
-	color: $blue;
+	color: $main-color;
 }
 
 .nav-shadow {
@@ -23,8 +35,8 @@ body {
 }
 
 nav {
-    text-transform: uppercase;
-    transition: background-color .6s;
+	text-transform: uppercase;
+	transition: background-color 0.6s;
 	z-index: 1;
 
 	.nav-link,
@@ -34,7 +46,7 @@ nav {
 	}
 
 	a:hover {
-		color: $blue;
+		color: $main-color;
 	}
 
 	.fa-bars {
@@ -45,7 +57,7 @@ nav {
 	}
 
 	.active {
-		color: $blue;
+		color: $main-color;
 	}
 }
 
@@ -64,13 +76,13 @@ header {
 	}
 
 	h1 {
-        font-size: 30px;
+		font-size: 30px;
 		text-transform: uppercase;
 	}
 
-    p {
-        font-size: 14px;
-    }
+	p {
+		font-size: 14px;
+	}
 
 	.bg-img {
 		position: relative;
@@ -90,43 +102,54 @@ header {
 		text-transform: uppercase;
 	}
 	.fa-chevron-down {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
 		font-size: 50px;
-        color: $white;
+		color: $white;
 	}
 }
 
-main {
-	background-color: gold;
-	// z-index: 2;
+// MAIN
+
+.aboutus {
+    i {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    
+    .aboutus-card-title {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .aboutus-card-text {
+        font-size: 14px;
+    }
 }
-
-
 
 @media (min-width: 375px) {
 	header {
-        h1 {
-            font-size: 36px;
-        }
-        
-        p {
-            font-size: 16px;
-        }
+		h1 {
+			font-size: 36px;
+		}
+
+		p {
+			font-size: 16px;
+		}
 	}
 }
 
 @media (min-width: 768px) {
 	header {
-        h1 {
-            font-size: 42px;
-        }
-        
-        p {
-            font-size: 20px;
-        }
+		h1 {
+			font-size: 42px;
+		}
+
+		p {
+			font-size: 20px;
+		}
 	}
 }
 
