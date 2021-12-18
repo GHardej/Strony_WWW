@@ -13,12 +13,17 @@ body {
   background-color: #444;
 }
 
+.blue-text {
+  color: #039dff;
+}
+
 nav {
   text-transform: uppercase;
 }
 
 nav .nav-link,
-nav .navbar-brand, nav .fa-bars {
+nav .navbar-brand,
+nav .fa-bars {
   color: #fff;
 }
 
@@ -36,5 +41,58 @@ nav .navbar-brand {
 
 nav .active {
   color: #039dff;
+}
+
+header {
+  color: #fff;
+}
+
+header .welcome-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 5px;
+  z-index: 5;
+}
+
+header h1 {
+  text-transform: uppercase;
+}
+
+header .bg-img {
+  position: relative;
+  height: 100vh;
+  background: fixed center/cover url(../img/playstation-1845880_640.jpg);
+  z-index: -2;
+}
+
+header .bg-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+main {
+  background-color: gold;
+}
+
+@media (min-width: 992px) {
+  header .bg-img {
+    background: fixed center/cover url(../img/playstation-1845880_1920.jpg);
+  }
 }
 /*# sourceMappingURL=main.css.map */

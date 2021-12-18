@@ -13,11 +13,17 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #444;
 }
+
+.blue-text {
+	color: $blue;
+}
+
 nav {
 	text-transform: uppercase;
 
 	.nav-link,
-	.navbar-brand, .fa-bars {
+	.navbar-brand,
+	.fa-bars {
 		color: $white;
 	}
 
@@ -35,4 +41,50 @@ nav {
 	.active {
 		color: $blue;
 	}
+}
+
+header {
+	color: $white;
+
+	.welcome-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		text-align: center;
+		padding: 5px;
+		z-index: 5;
+	}
+
+	h1 {
+		text-transform: uppercase;
+	}
+
+	.bg-img {
+		position: relative;
+		height: 100vh;
+		background: fixed center / cover url(../img/playstation-1845880_640.jpg);
+		z-index: -2;
+	}
+	.bg-shadow {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: -1;
+	}
+}
+
+main {
+	background-color: gold;
+	// z-index: 2;
+}
+
+@media (min-width: 992px) {
+header {
+    .bg-img {
+		background: fixed center / cover url(../img/playstation-1845880_1920.jpg);
+	}
+}
 }
