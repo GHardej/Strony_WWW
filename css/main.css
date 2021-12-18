@@ -19,6 +19,7 @@ body {
 
 nav {
   text-transform: uppercase;
+  z-index: 1;
 }
 
 nav .nav-link,
@@ -75,7 +76,7 @@ header .bg-img {
   position: relative;
   height: 100vh;
   background: fixed center/cover url(../img/playstation-1845880_640.jpg);
-  z-index: -2;
+  z-index: 0;
 }
 
 header .bg-shadow {
@@ -84,6 +85,20 @@ header .bg-shadow {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
+}
+
+header .btn-outline-light {
+  text-transform: uppercase;
+}
+
+header .fa-chevron-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 50px;
+  color: #fff;
 }
 
 main {
