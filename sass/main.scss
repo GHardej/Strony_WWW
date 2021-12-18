@@ -54,13 +54,18 @@ header {
 		align-items: center;
 		height: 100%;
 		text-align: center;
-		padding: 5px;
+		padding: 10px;
 		z-index: 5;
 	}
 
 	h1 {
+        font-size: 30px;
 		text-transform: uppercase;
 	}
+
+    p {
+        font-size: 14px;
+    }
 
 	.bg-img {
 		position: relative;
@@ -94,7 +99,33 @@ main {
 	// z-index: 2;
 }
 
-@media (min-width: 992px) {
+
+
+@media (min-width: 375px) {
+	header {
+        h1 {
+            font-size: 36px;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+	}
+}
+
+@media (min-width: 768px) {
+	header {
+        h1 {
+            font-size: 42px;
+        }
+        
+        p {
+            font-size: 20px;
+        }
+	}
+}
+
+@media (min-width: 1200px) {
 	header {
 		.bg-img {
 			background: fixed center / cover url(../img/playstation-1845880_1920.jpg);

@@ -64,12 +64,17 @@ header .welcome-text {
           align-items: center;
   height: 100%;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   z-index: 5;
 }
 
 header h1 {
+  font-size: 30px;
   text-transform: uppercase;
+}
+
+header p {
+  font-size: 14px;
 }
 
 header .bg-img {
@@ -105,7 +110,25 @@ main {
   background-color: gold;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 42px;
+  }
+  header p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
   header .bg-img {
     background: fixed center/cover url(../img/playstation-1845880_1920.jpg);
   }
