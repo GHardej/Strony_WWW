@@ -147,44 +147,73 @@ header {
 	}
 }
 
-	// PLATFORMY
+// PLATFORMY
 
-	.aboutus-platform {
-        position: relative;
-        background-image: url(../img/technology-2818664_640.jpg);
-        background-position: center;
-        background-size: cover;
-        color: $light-gray;
+.aboutus-platform {
+	position: relative;
+	background-image: url(../img/technology-2818664_640.jpg);
+	background-position: center;
+	background-size: cover;
+	color: $light-gray;
+}
+
+.aboutus-shadow {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: -1;
+}
+
+.aboutus-platform {
+	// padding: 50px 10px;
+	color: $white;
+	z-index: 5;
+}
+
+.aboutus-platform-item {
+	margin: 10px 0;
+
+	i {
+		font-size: 36px;
 	}
 
-		// z-index: 0;
+	.aboutus-platform-name {
+		font-size: 24px;
+	}
+}
 
-	.aboutus-shadow {
+.portfolio {
+	background-color: $white;
+
+	.carousel-item {
+		// padding: 0 150px;
+		position: relative;
+		height: 600px;
+	}
+
+	// .carousel-shadow {
+	//     position: absolute;
+	//     bottom: 16px;
+	//     height: 136px;
+	//     width: 100%;
+	//     background-color: rgba(0, 0, 0, 0.5);
+	//     z-index: 1;
+	// }
+
+	.carousel-caption {
 		position: absolute;
-        top: 0;
-		height: 100%;
-		width: 100%;
+		left: 0;
+		right: 0;
+        padding: 40px 0;
 		background-color: rgba(0, 0, 0, 0.5);
-		z-index: -1;
+		// z-index: 10;
 	}
-
-	.aboutus-platform {
-		// padding: 50px 10px;
-		color: $white;
-		z-index: 5;
-	}
-    
-    .aboutus-platform-item {
-        margin: 10px 0;
-        
-        i {
-            font-size: 36px;
-        }
-
-        .aboutus-platform-name {
-            font-size: 24px;
-        }
+    .carousel-indicators {
+        padding-bottom: 15px;
     }
+}
 
 // RWD - ustawienia responsywne
 
@@ -217,8 +246,8 @@ header {
 		scroll-padding-top: 72px;
 	}
 
-    .aboutus-platform {
-        background-image: url(../img/technology-2818664.jpg);
+	.aboutus-platform {
+		background-image: url(../img/technology-2818664.jpg);
 	}
 }
 

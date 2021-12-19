@@ -185,6 +185,27 @@ header .fa-chevron-down {
   font-size: 24px;
 }
 
+.portfolio {
+  background-color: #fff;
+}
+
+.portfolio .carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+.portfolio .carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio .carousel-indicators {
+  padding-bottom: 15px;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;
