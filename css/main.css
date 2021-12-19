@@ -153,7 +153,7 @@ header .fa-chevron-down {
 
 .aboutus-platform {
   position: relative;
-  background-image: url(../img/technology-2818664.jpg);
+  background-image: url(../img/technology-2818664_640.jpg);
   background-position: center;
   background-size: cover;
   color: #ddd;
@@ -173,8 +173,16 @@ header .fa-chevron-down {
   z-index: 5;
 }
 
-.aboutus-platform-name {
-  font-size: 18px;
+.aboutus-platform-item {
+  margin: 10px 0;
+}
+
+.aboutus-platform-item i {
+  font-size: 36px;
+}
+
+.aboutus-platform-item .aboutus-platform-name {
+  font-size: 24px;
 }
 
 @media (min-width: 375px) {
@@ -198,6 +206,9 @@ header .fa-chevron-down {
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 72px;
+  }
+  .aboutus-platform {
+    background-image: url(../img/technology-2818664.jpg);
   }
 }
 

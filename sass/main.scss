@@ -151,7 +151,7 @@ header {
 
 	.aboutus-platform {
         position: relative;
-        background-image: url(../img/technology-2818664.jpg);
+        background-image: url(../img/technology-2818664_640.jpg);
         background-position: center;
         background-size: cover;
         color: $light-gray;
@@ -173,10 +173,18 @@ header {
 		color: $white;
 		z-index: 5;
 	}
+    
+    .aboutus-platform-item {
+        margin: 10px 0;
+        
+        i {
+            font-size: 36px;
+        }
 
-	.aboutus-platform-name {
-		font-size: 18px;
-	}
+        .aboutus-platform-name {
+            font-size: 24px;
+        }
+    }
 
 // RWD - ustawienia responsywne
 
@@ -207,6 +215,10 @@ header {
 @media (min-width: 992px) {
 	html {
 		scroll-padding-top: 72px;
+	}
+
+    .aboutus-platform {
+        background-image: url(../img/technology-2818664.jpg);
 	}
 }
 
