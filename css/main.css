@@ -14,7 +14,7 @@ html {
 body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  background-color: #444;
+  background-color: #ebecf2;
 }
 
 h2 {
@@ -157,6 +157,7 @@ header .fa-chevron-down {
   background-position: center;
   background-size: cover;
   color: #ddd;
+  z-index: 0;
 }
 
 .aboutus-shadow {
@@ -166,11 +167,6 @@ header .fa-chevron-down {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
-}
-
-.aboutus-platform {
-  color: #fff;
-  z-index: 5;
 }
 
 .aboutus-platform-item {
@@ -183,10 +179,6 @@ header .fa-chevron-down {
 
 .aboutus-platform-item .aboutus-platform-name {
   font-size: 24px;
-}
-
-.portfolio {
-  background-color: #fff;
 }
 
 .portfolio .carousel-item {
@@ -204,6 +196,10 @@ header .fa-chevron-down {
 
 .portfolio .carousel-indicators {
   padding-bottom: 15px;
+}
+
+.prices .uppercase {
+  text-transform: uppercase;
 }
 
 @media (min-width: 375px) {
@@ -225,8 +221,8 @@ header .fa-chevron-down {
 }
 
 @media (min-width: 992px) {
-  html {
-    scroll-padding-top: 72px;
+  nav {
+    height: 82px;
   }
   .aboutus-platform {
     background-image: url(../img/technology-2818664.jpg);
@@ -235,7 +231,7 @@ header .fa-chevron-down {
 
 @media (min-width: 1200px) {
   header .bg-img {
-    background: fixed center/cover url(../img/playstation-1845880_1920.jpg);
+    background-image: url(../img/playstation-1845880_1920.jpg);
   }
 }
 /*# sourceMappingURL=main.css.map */
