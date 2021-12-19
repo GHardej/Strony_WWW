@@ -8,6 +8,10 @@
 	padding: 0;
 }
 
+html {
+    scroll-padding-top: 82px;
+}
+
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
@@ -20,7 +24,7 @@ h2 {
 }
 
 .underline {
-    margin: 0 auto 40px;
+	margin: 0 auto 40px;
 	width: 70px;
 	height: 4px;
 	background-color: $main-color;
@@ -33,6 +37,8 @@ h2 {
 .nav-shadow {
 	background-color: rgba(0, 0, 0, 0.9);
 }
+
+// NAV - nawigacja
 
 nav {
 	text-transform: uppercase;
@@ -61,8 +67,25 @@ nav {
 	}
 }
 
+// HEADER - sekcja powitalna
+
 header {
 	color: $white;
+
+    .bg-img {
+        position: relative;
+        height: 100vh;
+        background: fixed center / cover url(../img/playstation-1845880_640.jpg);
+        z-index: 0;
+    }
+
+    .bg-shadow {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+    }
 
 	.welcome-text {
 		display: flex;
@@ -84,19 +107,6 @@ header {
 		font-size: 14px;
 	}
 
-	.bg-img {
-		position: relative;
-		height: 100vh;
-		background: fixed center / cover url(../img/playstation-1845880_640.jpg);
-		z-index: 0;
-	}
-	.bg-shadow {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		background-color: rgba(0, 0, 0, 0.5);
-		z-index: -1;
-	}
 
 	.btn-outline-light {
 		text-transform: uppercase;
@@ -112,22 +122,33 @@ header {
 }
 
 // MAIN
+// SECTION - o nas
 
 .aboutus {
-    i {
-        margin-top: 20px;
-        font-size: 30px;
-    }
-    
-    .aboutus-card-title {
-        font-size: 18px;
-        text-transform: uppercase;
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+
+    .aboutus-hover {
+        transition: color .3s;
     }
 
-    .aboutus-card-text {
-        font-size: 14px;
-    }
+	.aboutus-hover:hover {
+		color: $main-color;
+	}
 }
+
+// RWD - ustawienia responsywne
 
 @media (min-width: 375px) {
 	header {
@@ -151,6 +172,12 @@ header {
 			font-size: 20px;
 		}
 	}
+}
+
+@media (min-width: 992px) {
+    html {
+        scroll-padding-top: 72px;
+    }
 }
 
 @media (min-width: 1200px) {
