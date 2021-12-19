@@ -9,7 +9,7 @@
 }
 
 html {
-    scroll-padding-top: 82px;
+	scroll-padding-top: 82px;
 }
 
 body {
@@ -72,20 +72,20 @@ nav {
 header {
 	color: $white;
 
-    .bg-img {
-        position: relative;
-        height: 100vh;
-        background: fixed center / cover url(../img/playstation-1845880_640.jpg);
-        z-index: 0;
-    }
+	.bg-img {
+		position: relative;
+		height: 100vh;
+		background: fixed center / cover url(../img/playstation-1845880_640.jpg);
+		z-index: 0;
+	}
 
-    .bg-shadow {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-        z-index: -1;
-    }
+	.bg-shadow {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -1;
+	}
 
 	.welcome-text {
 		display: flex;
@@ -106,7 +106,6 @@ header {
 	p {
 		font-size: 14px;
 	}
-
 
 	.btn-outline-light {
 		text-transform: uppercase;
@@ -139,14 +138,45 @@ header {
 		font-size: 14px;
 	}
 
-    .aboutus-hover {
-        transition: color .3s;
-    }
+	.aboutus-hover {
+		transition: color 0.3s;
+	}
 
 	.aboutus-hover:hover {
 		color: $main-color;
 	}
 }
+
+	// PLATFORMY
+
+	.aboutus-platform {
+        position: relative;
+        background-image: url(../img/technology-2818664.jpg);
+        background-position: center;
+        background-size: cover;
+        color: $light-gray;
+	}
+
+		// z-index: 0;
+
+	.aboutus-shadow {
+		position: absolute;
+        top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: -1;
+	}
+
+	.aboutus-platform {
+		// padding: 50px 10px;
+		color: $white;
+		z-index: 5;
+	}
+
+	.aboutus-platform-name {
+		font-size: 18px;
+	}
 
 // RWD - ustawienia responsywne
 
@@ -175,9 +205,9 @@ header {
 }
 
 @media (min-width: 992px) {
-    html {
-        scroll-padding-top: 72px;
-    }
+	html {
+		scroll-padding-top: 72px;
+	}
 }
 
 @media (min-width: 1200px) {
