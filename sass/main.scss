@@ -323,6 +323,26 @@ header {
 
 // OSIĄGNIĘCIA
 
+.achievements {
+	i {
+		padding: 10px;
+		font-size: 48px;
+		color: $white;
+		text-shadow: 0 0 5px #000;
+	}
+	.achievements-list {
+		padding: 20px 0;
+	}
+
+    .achievement-number {
+        font-size: 22px;
+    }
+
+    .achievement-text {
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+}
 
 // RWD - ustawienia responsywne
 
