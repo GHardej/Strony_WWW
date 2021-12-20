@@ -263,18 +263,61 @@ header {
 // TEAM
 
 .team {
-	// margin-top: 30px;
+	position: relative;
+	background-image: url(../img/iocenters-2673316_1920.jpg);
+	background-position: center;
+	background-size: cover;
+    background-attachment: fixed;
+	z-index: 0;
+    
+    .team-shadow {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
 
+    h2 {
+        color: $light-gray;
+    }
+
+    
 	.card {
-		margin: 10 20px;
+        margin: 10px 20px;
+        transition: transform .3s;
+
+        img {
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .card-footer {
+            display: flex;
+            justify-content: space-around;
+            color: $main-color;
+            
+            i {
+                padding: 5px;
+
+            }
+        }
+        .card-title {
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .card-text {
+            font-size: 12px;
+        }
 	}
 
-	.card-footer {
-        display: flex;
-        justify-content: space-around;
-        padding: 10px;
-		color: $main-color;
-	}
+    .card:hover {
+        transform: scale(0.95);
+    }
+
 }
 
 // RWD - ustawienia responsywne

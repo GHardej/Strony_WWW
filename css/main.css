@@ -243,18 +243,68 @@ header .fa-chevron-down {
   text-decoration: none;
 }
 
-.team .card {
-  margin: 10 20px;
+.team {
+  position: relative;
+  background-image: url(../img/iocenters-2673316_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
 }
 
-.team .card-footer {
+.team .team-shadow {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.team h2 {
+  color: #ddd;
+}
+
+.team .card {
+  margin: 10px 20px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team .card .card-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 10px;
   color: #039dff;
+}
+
+.team .card .card-footer i {
+  padding: 5px;
+}
+
+.team .card .card-title {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.team .card .card-text {
+  font-size: 12px;
+}
+
+.team .card:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 @media (min-width: 375px) {
