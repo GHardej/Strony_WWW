@@ -243,6 +243,20 @@ header .fa-chevron-down {
   text-decoration: none;
 }
 
+.team .card {
+  margin: 10 20px;
+}
+
+.team .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+  color: #039dff;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;

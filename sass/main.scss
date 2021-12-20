@@ -260,6 +260,23 @@ header {
 	}
 }
 
+// TEAM
+
+.team {
+	// margin-top: 30px;
+
+	.card {
+		margin: 10 20px;
+	}
+
+	.card-footer {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+		color: $main-color;
+	}
+}
+
 // RWD - ustawienia responsywne
 
 @media (min-width: 375px) {
@@ -295,11 +312,11 @@ header {
 		background-image: url(../img/technology-2818664.jpg);
 	}
 
-    .prices {
-        .price-info {
-            font-size: 18px;
-        }
-    }
+	.prices {
+		.price-info {
+			font-size: 18px;
+		}
+	}
 }
 
 @media (min-width: 1200px) {
