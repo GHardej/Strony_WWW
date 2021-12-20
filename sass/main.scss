@@ -334,14 +334,70 @@ header {
 		padding: 20px 0;
 	}
 
-    .achievement-number {
-        font-size: 22px;
-    }
+	.achievement-number {
+		font-size: 22px;
+	}
 
-    .achievement-text {
-        text-transform: uppercase;
-        font-size: 13px;
-    }
+	.achievement-text {
+		text-transform: uppercase;
+		font-size: 13px;
+	}
+}
+
+// KONTAKT
+
+.contact {
+	position: relative;
+	background-image: url(../img/skyline-1869214_640.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: $white;
+	z-index: 0;
+
+	.contact-shadow {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 18, 53, 0.7);
+		z-index: -1;
+	}
+
+	h2 {
+		font-weight: bold;
+		color: $light-gray;
+	}
+
+	.underline {
+		background-color: $light-gray;
+	}
+
+	.contact-us {
+		align-items: center;
+
+		.contact-item {
+			margin: 30px 0;
+
+			h3 {
+				text-transform: uppercase;
+				margin-bottom: 15px;
+				letter-spacing: 2px;
+			}
+
+			.social-media {
+				font-size: 22px;
+				a {
+					padding: 10px;
+					color: $white;
+				}
+
+				a:hover {
+					color: $light-gray;
+				}
+			}
+		}
+	}
 }
 
 // RWD - ustawienia responsywne

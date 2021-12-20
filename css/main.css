@@ -331,6 +331,63 @@ header .fa-chevron-down {
   font-size: 13px;
 }
 
+.contact {
+  position: relative;
+  background-image: url(../img/skyline-1869214_640.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  z-index: 0;
+}
+
+.contact .contact-shadow {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 18, 53, 0.7);
+  z-index: -1;
+}
+
+.contact h2 {
+  font-weight: bold;
+  color: #ddd;
+}
+
+.contact .underline {
+  background-color: #ddd;
+}
+
+.contact .contact-us {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-us .contact-item {
+  margin: 30px 0;
+}
+
+.contact .contact-us .contact-item h3 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.contact .contact-us .contact-item .social-media {
+  font-size: 22px;
+}
+
+.contact .contact-us .contact-item .social-media a {
+  padding: 10px;
+  color: #fff;
+}
+
+.contact .contact-us .contact-item .social-media a:hover {
+  color: #ddd;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;
