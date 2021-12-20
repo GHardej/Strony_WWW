@@ -9,7 +9,7 @@
 }
 
 html {
-	scroll-padding-top: 82px;
+	scroll-padding-top: 81px;
 }
 
 body {
@@ -267,57 +267,58 @@ header {
 	background-image: url(../img/iocenters-2673316_1920.jpg);
 	background-position: center;
 	background-size: cover;
-    background-attachment: fixed;
+	background-attachment: fixed;
 	z-index: 0;
-    
-    .team-shadow {
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: -1;
-    }
 
-    h2 {
-        color: $light-gray;
-    }
-
-    
-	.card {
-        margin: 10px 20px;
-        transition: transform .3s;
-
-        img {
-            height: 300px;
-            object-fit: cover;
-        }
-        
-        .card-footer {
-            display: flex;
-            justify-content: space-around;
-            color: $main-color;
-            
-            i {
-                padding: 5px;
-
-            }
-        }
-        .card-title {
-            margin-bottom: 20px;
-            text-align: center;
-            text-transform: uppercase;
-        }
-
-        .card-text {
-            font-size: 12px;
-        }
+	.team-shadow {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: -1;
 	}
 
-    .card:hover {
-        transform: scale(0.95);
-    }
+	h2 {
+		color: $light-gray;
+	}
 
+	.card {
+		margin: 10px 20px;
+		transition: transform 0.3s;
+
+		img {
+			height: 170px;
+			object-fit: cover;
+		}
+
+		.card-body {
+			height: 130px;
+		}
+
+		.card-footer {
+			display: flex;
+			justify-content: space-around;
+			color: $main-color;
+
+			i {
+				padding: 5px;
+			}
+		}
+		.card-title {
+			margin-bottom: 20px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		.card-text {
+			font-size: 12px;
+		}
+	}
+
+	.card:hover {
+		transform: scale(0.95);
+	}
 }
 
 // RWD - ustawienia responsywne
@@ -342,6 +343,18 @@ header {
 
 		p {
 			font-size: 20px;
+		}
+	}
+	.team {
+		.card {
+			img {
+				height: 300px;
+				object-fit: cover;
+			}
+
+			.card-body {
+				height: 130px;
+			}
 		}
 	}
 }
