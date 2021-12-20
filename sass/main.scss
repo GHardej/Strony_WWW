@@ -217,8 +217,40 @@ header {
     //     background-color: $line-color;
     //     height: 1px;
     // }
-    .uppercase {
+
+    .price-box {
+        margin: 10px;
+        padding: 20px;
+        box-shadow: 5px 5px 3px 0px grey;
+        background-color: $white;
+        transition: transform .3s;
+    }
+
+    .price-box:hover {
+        transform: scale(1.1);
+    }
+
+    h3 {
         text-transform: uppercase;
+        color: $main-color;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    i {
+        margin: auto 6px;
+        font-size: 24px;
+    }
+
+    .price-tag {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
     }
 }
 
@@ -256,6 +288,10 @@ header {
 	.aboutus-platform {
 		background-image: url(../img/technology-2818664.jpg);
 	}
+
+    .price-info {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 1200px) {

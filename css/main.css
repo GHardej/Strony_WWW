@@ -198,8 +198,44 @@ header .fa-chevron-down {
   padding-bottom: 15px;
 }
 
-.prices .uppercase {
+.prices .price-box {
+  margin: 10px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 3px 0px grey;
+          box-shadow: 5px 5px 3px 0px grey;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.prices .price-box:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.prices h3 {
   text-transform: uppercase;
+  color: #039dff;
+}
+
+.prices span {
+  font-weight: bold;
+}
+
+.prices i {
+  margin: auto 6px;
+  font-size: 24px;
+}
+
+.prices .price-tag {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.prices a {
+  text-decoration: none;
 }
 
 @media (min-width: 375px) {
@@ -226,6 +262,9 @@ header .fa-chevron-down {
   }
   .aboutus-platform {
     background-image: url(../img/technology-2818664.jpg);
+  }
+  .price-info {
+    font-size: 18px;
   }
 }
 
