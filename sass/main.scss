@@ -155,7 +155,7 @@ header {
 	background-position: center;
 	background-size: cover;
 	color: $light-gray;
-    z-index: 0;
+	z-index: 0;
 }
 
 .aboutus-shadow {
@@ -212,46 +212,52 @@ header {
 // SEKCJA - CENNIK
 
 .prices {
+	// .line {
+	//     background-color: $line-color;
+	//     height: 1px;
+	// }
 
-    // .line {
-    //     background-color: $line-color;
-    //     height: 1px;
-    // }
+	.price-box {
+		margin: 20px 10px;
+		padding: 20px;
+		box-shadow: 5px 5px 3px 0px grey;
+		background-color: $white;
+		transition: transform 0.3s;
 
-    .price-box {
-        margin: 10px;
-        padding: 20px;
-        box-shadow: 5px 5px 3px 0px grey;
-        background-color: $white;
-        transition: transform .3s;
-    }
+		h3 {
+			text-transform: uppercase;
+			color: $main-color;
+		}
 
-    .price-box:hover {
-        transform: scale(1.1);
-    }
+		span {
+			font-weight: bold;
+		}
 
-    h3 {
-        text-transform: uppercase;
-        color: $main-color;
-    }
+		i {
+			margin: auto 6px;
+			font-size: 24px;
+		}
 
-    span {
-        font-weight: bold;
-    }
+		button {
+			padding: 10px 20px;
+			text-transform: uppercase;
+		}
 
-    i {
-        margin: auto 6px;
-        font-size: 24px;
-    }
+		.price-tag {
+			font-size: 28px;
+			font-weight: bold;
+		}
+	}
 
-    .price-tag {
-        font-size: 26px;
-        font-weight: bold;
-    }
+	.price-box:hover {
+		transform: scale(1.05);
+	}
 
-    a {
-        text-decoration: none;
-    }
+	.price-info {
+		a {
+			text-decoration: none;
+		}
+	}
 }
 
 // RWD - ustawienia responsywne
@@ -289,8 +295,10 @@ header {
 		background-image: url(../img/technology-2818664.jpg);
 	}
 
-    .price-info {
-        font-size: 18px;
+    .prices {
+        .price-info {
+            font-size: 18px;
+        }
     }
 }
 
