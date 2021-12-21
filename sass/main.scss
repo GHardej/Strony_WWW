@@ -1,4 +1,5 @@
 @import './colors';
+@import './animation';
 
 *,
 *::before,
@@ -35,6 +36,10 @@ h2 {
 }
 
 .nav-shadow {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.bg-dark {
 	background-color: rgba(0, 0, 0, 0.9);
 }
 
