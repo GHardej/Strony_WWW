@@ -143,9 +143,10 @@ header {
 		font-size: 14px;
 	}
 
-	.aboutus-hover {
-		transition: color 0.3s;
-	}
+	// .aboutus-hover {
+        // display: block;
+		// transition: color 0.3s;
+	// }
 
 	.aboutus-hover:hover {
 		color: $main-color;
